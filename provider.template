@@ -1,0 +1,31 @@
+provider "aws" {
+  region = "us-east-1"
+  alias = "devops_account"
+  access_key = "$DEVOPS_AWS_ACCESS_KEY_ID"
+  secret_key = "$DEVOPS_AWS_SECRET_ACCESS_KEY"
+  token = "$DEVOPS_AWS_SESSION_TOKEN"
+}
+
+provider "aws" {
+  region = "us-east-1"
+  alias = "dev_account"
+  access_key = "$DEV_AWS_ACCESS_KEY_ID"
+  secret_key = "$DEV_AWS_SECRET_ACCESS_KEY"
+  token = "$DEV_AWS_SESSION_TOKEN"
+}
+
+provider "aws" {
+  region = "us-east-1"
+  alias = "stg_account"
+  access_key = "$STG_AWS_ACCESS_KEY_ID"
+  secret_key = "$STG_AWS_SECRET_ACCESS_KEY"
+  token = "$STG_AWS_SESSION_TOKEN"
+}
+
+provider "aws" {
+  region = "us-east-1"
+  alias = "prd_account"
+  access_key = "$PRD_AWS_ACCESS_KEY_ID"
+  secret_key = "$PRD_AWS_SECRET_ACCESS_KEY"
+  token = "$PRD_AWS_SESSION_TOKEN"
+}
